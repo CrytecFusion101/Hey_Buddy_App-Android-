@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_455sdp"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginEnd="-20dp"
+            android:background="@drawable/ic_yellow_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_user"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp"
+                android:visibility="invisible"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_40sdp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imgAddPhoto"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:src="@drawable/ic_add_image" />
+
+                <TextView
+                    android:id="@+id/txtAddPhoto"
+                    style="@style/TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:text="@string/add_photo"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_6sdp"
+                android:text="@string/username"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtUsername"
+                style="@style/EdittextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/drawable_white_edittext" />
+
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_6sdp"
+                android:text="@string/email_id"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEmail"
+                style="@style/EdittextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/drawable_white_edittext"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_6sdp"
+                android:text="@string/password"
+                android:textColor="@color/white" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtPassword"
+                style="@style/EdittextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_38sdp"
+                android:background="@drawable/drawable_white_edittext"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+
+
+            <Button
+                android:id="@+id/btnSignUp"
+                style="@style/ButtonStyle"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/signup" />
+
+            <!--
+                        <TextView
+                            style="@style/TextViewStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/helvetica_bold"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:text="@string/sign_up_using" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:src="@drawable/ic_email" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgFacebook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_facebook" />
+                        </LinearLayout>-->
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,165 @@
+{
+  "project_info": {
+    "project_number": "587335295959",
+    "firebase_url": "https://hey-buddy-248514.firebaseio.com",
+    "project_id": "hey-buddy-248514",
+    "storage_bucket": "hey-buddy-248514.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587335295959:android:8909d022aed93c46",
+        "android_client_info": {
+          "package_name": "com.devstree.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587335295959-enjptro2am6ii570ijvrf6tq5ppbe45d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devstree.chatapp",
+            "certificate_hash": "21a5a5acae1584a63e9491339f8bfc712dfc4818"
+          }
+        },
+        {
+          "client_id": "587335295959-8bp4v2qre5mbif6afdspvt9n18vpjd2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devstree.chatapp",
+            "certificate_hash": "a948282857994d63e267d289524534e8dfcc01fd"
+          }
+        },
+        {
+          "client_id": "587335295959-tqu1199ku5l9jct98b1tnsioqmbbd405.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devstree.chatapp",
+            "certificate_hash": "9072e5a6d0ea3f7d6643afa25ae9a3f040f48029"
+          }
+        },
+        {
+          "client_id": "587335295959-t2d8e5g2a9l0jqbm75m3590lvbposlu6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devstree.chatapp",
+            "certificate_hash": "94ca08f7af8b6b97c3f6e4f77803b11e95b38472"
+          }
+        },
+        {
+          "client_id": "587335295959-j576c6tg535lpp3boiitu60vofutvtum.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devstree.chatapp",
+            "certificate_hash": "5f1fb0e52dcb8c89eaf32e077cfa95815c66f45a"
+          }
+        },
+        {
+          "client_id": "587335295959-2o1fg0on9p9kof0kihgapfirmih3r2tb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devstree.chatapp",
+            "certificate_hash": "b7a4891534543f448c3aac03232f2fdb3e36c016"
+          }
+        },
+        {
+          "client_id": "587335295959-9hd7hh7kt3o1kbi3ohrjv2u4fv6a5k40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6lNARRChESl-GWGEf0lNfIkVm7abiYII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587335295959-9hd7hh7kt3o1kbi3ohrjv2u4fv6a5k40.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587335295959:android:ce1f160e00818ddb",
+        "android_client_info": {
+          "package_name": "com.heybuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587335295959-8lijtqu7l1m1158f6khe9pi8ofoie74o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.heybuddy",
+            "certificate_hash": "21a5a5acae1584a63e9491339f8bfc712dfc4818"
+          }
+        },
+        {
+          "client_id": "587335295959-uh0ebi51l7nlo7fm48a1iqd52nkj6b8n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.heybuddy",
+            "certificate_hash": "9072e5a6d0ea3f7d6643afa25ae9a3f040f48029"
+          }
+        },
+        {
+          "client_id": "587335295959-97ftcbfl4adh3930dpa6cmmtishrnvm2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.heybuddy",
+            "certificate_hash": "94ca08f7af8b6b97c3f6e4f77803b11e95b38472"
+          }
+        },
+        {
+          "client_id": "587335295959-ivg3hrm86fluip6qibuq429qsjo8ig7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.heybuddy",
+            "certificate_hash": "5f1fb0e52dcb8c89eaf32e077cfa95815c66f45a"
+          }
+        },
+        {
+          "client_id": "587335295959-duolacu7o3st9kgs5jqpshcvfqs6k48u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.heybuddy",
+            "certificate_hash": "b7a4891534543f448c3aac03232f2fdb3e36c016"
+          }
+        },
+        {
+          "client_id": "587335295959-19t856pqmn7u1pe7kvroq23rostfskjj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.heybuddy",
+            "certificate_hash": "a948282857994d63e267d289524534e8dfcc01fd"
+          }
+        },
+        {
+          "client_id": "587335295959-9hd7hh7kt3o1kbi3ohrjv2u4fv6a5k40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6lNARRChESl-GWGEf0lNfIkVm7abiYII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587335295959-9hd7hh7kt3o1kbi3ohrjv2u4fv6a5k40.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

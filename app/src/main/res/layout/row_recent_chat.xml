@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_2sdp">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_place_holder"
+            app:riv_border_color="@color/colorGray"
+            app:riv_border_width="@dimen/_1sdp"
+            app:riv_corner_radius="@dimen/_22sdp" />
+
+
+        <ImageView
+            android:id="@+id/imgOnline"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_online" />
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtName"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toEndOf="@+id/framelayout"
+        android:ellipsize="end"
+        android:fontFamily="@font/helvetica_bold"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text="@string/username"
+        android:textSize="@dimen/_12sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtMessage"
+        style="@style/TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toEndOf="@+id/framelayout"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="@dimen/_12sdp" />
+
+</RelativeLayout>

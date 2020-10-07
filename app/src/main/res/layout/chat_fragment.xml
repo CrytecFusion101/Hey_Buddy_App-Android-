@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/mAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:elevation="@dimen/_4sdp"
+        app:liftOnScroll="true">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentInsetStart="0dp"
+            app:layout_collapseMode="pin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="?android:attr/actionBarSize"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_back" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/imgBack">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:scaleType="centerCrop"
+                        android:src="#D3E0D7"
+                        app:riv_border_color="@color/colorGray"
+                        app:riv_border_width="@dimen/_1sdp"
+                        app:riv_corner_radius="@dimen/_22sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/imgProfile"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtTopbarName"
+                            style="@style/TextViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                             android:text="@string/name"
+                            android:textSize="@dimen/_16sdp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtTyping"
+                            style="@style/TextViewStyle"
+                            android:layout_width="match_parent"
+                           android:visibility="gone" android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/imgProfile"
+                            android:gravity="center_vertical"
+                            android:text="@string/online"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linBottom"
+        android:layout_below="@id/mAppBar"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_10sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtNoUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:text="@string/no_online_user" />
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtHeaderDate"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@drawable/drawable_white_edittext"
+            android:gravity="center"
+            android:paddingStart="@dimen/_7sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text=""
+            android:textColor="@color/black_900"
+            android:textSize="@dimen/_12ssp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.vanniktech.emoji.EmojiEditText
+            android:id="@+id/edtMessage"
+            style="@style/EdittextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_rounded_yellow_box"
+            android:focusable="true"
+            android:gravity="start|center_vertical"
+            android:hint="@string/typing"
+            android:inputType="textMultiLine"
+            android:maxHeight="@dimen/_54sdp"
+            android:maxLines="6"
+            android:paddingStart="@dimen/_14sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_14sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:singleLine="false"
+            android:text=""
+            android:textSize="@dimen/_13ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgSend"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="end|bottom"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_send" />
+    </LinearLayout>
+
+</RelativeLayout>

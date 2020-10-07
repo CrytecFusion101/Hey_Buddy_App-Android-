@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/diagonal_yellow_triangle_77y" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_card"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.pixelcan.inkpageindicator.InkPageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+            app:ipi_animationDuration="320"
+            app:ipi_currentPageIndicatorColor="@color/white"
+            app:ipi_dotDiameter="9dp"
+            app:ipi_dotGap="9dp"
+            app:ipi_pageIndicatorColor="@color/white" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_15ssp"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_30sdp">
+
+            <Button
+                android:id="@+id/btnNeedaBuddy"
+                style="@style/ButtonStyle"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/need_a_buddy" />
+
+            <Button
+                android:id="@+id/btnBeaBuddy"
+                style="@style/ButtonStyle"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="@string/be_a_buddy" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

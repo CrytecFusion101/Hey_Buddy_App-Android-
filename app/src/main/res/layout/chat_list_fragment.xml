@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        app:elevation="@dimen/_4sdp"
+        app:liftOnScroll="true">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentInsetStart="0dp"
+            app:layout_collapseMode="pin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtLogout"
+                    style="@style/TextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_toStartOf="@id/txtNewChat"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="@string/logout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtNewChat"
+                    style="@style/TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:drawableStart="@drawable/ic_add"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:includeFontPadding="true"
+                    android:text="@string/new_chat"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17sdp"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLogout"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="@string/chats"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25sdp" />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtNoUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:text="@string/no_online_user" />
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/row_recent_chat" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

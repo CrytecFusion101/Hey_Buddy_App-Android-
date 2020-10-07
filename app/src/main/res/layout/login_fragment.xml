@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/diagonal_yellow_triangle_66y" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logo_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/linBottom"
+                android:layout_below="@id/imgLogo"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:text="@string/email_id"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtEmail"
+                    style="@style/EdittextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/drawable_white_edittext"
+                    android:inputType="textEmailAddress" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:text="@string/password"
+                    android:textColor="@color/white" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtPassword"
+                    style="@style/EdittextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drawable_white_edittext"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    style="@style/ButtonStyle"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="@string/signin" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtSignUp"
+                    style="@style/TextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/new_user_sign_up"
+                    android:textSize="@dimen/_15ssp" />
+
+                <LinearLayout
+                    android:id="@+id/linSocialSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_46sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/helvetica_bold"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:text="@string/sign_up_using" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgEmail"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:src="@drawable/ic_google" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgFacebook"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/ic_facebook" />
+
+
+                        <com.facebook.login.widget.LoginButton
+                            android:id="@+id/login_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="30dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,61 @@
+<resources>
+
+    <!--firebase credential-->
+    <!--Email: saventures3008@gmail.com-->
+    <!--Password: #1inmillion-->
+
+    <!--<string name="facebook_app_id">465523920696745</string>-->
+    <!--<string name="fb_login_protocol_scheme">fb465523920696745</string>-->
+    <!--firebase setup-->
+    <!--app id - 465523920696745-->
+    <!--secret - 14a4a3f7ac78cd08364a3a40da8f9dfc-->
+
+    <!--client id-->
+    <string name="facebook_app_id">2095877887381310</string>
+    <string name="fb_login_protocol_scheme">fb2095877887381310</string>
+    <string name="server_key">AAAAiL_pY9c:APA91bHg1w5JnfHVokI0Tzkmhxwk55vMXSisLi6GGifXC4IAa-Wd51N7saW-vkNy_6o69GEIk96Xx_S_CvobST7UX48Jki5iH-Z3Qk1_wBfhM_ozVQ8afSdlp2ebuSaFOSFuhxysbJdx</string>
+
+    <string name="app_name">Hey Buddy</string>
+    <string name="login">Login</string>
+    <string name="hey_buddy">Hey \nBuddy!</string>
+    <string name="email_id">Email</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign-In</string>
+    <string name="sign_up_using">Sign-Up using</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="username">Username</string>
+    <string name="signup">Sign-Up</string>
+    <string name="logout">Logout</string>
+    <string name="new_chat">New Chat</string>
+    <string name="chats">Chats</string>
+    <string name="message">Message</string>
+    <string name="need_a_buddy">Need a Buddy</string>
+    <string name="be_a_buddy">Be a Buddy</string>
+    <string name="hey_buddy_single_line">Hey Buddy!</string>
+    <string name="i_am_here_for_you_always">I am here for you. ALWAYS</string>
+    <string name="lets_go">Let\'s Go</string>
+    <string name="awesome">Awesome!</string>
+    <string name="you_are_all_set_up_with_your_account_lets_get_start">You\'re all set up with your account,\nLet\'s get started</string>
+    <string name="name">Name</string>
+    <string name="typing">Typing…</string>
+    <string name="new_user_sign_up">New user? SignUp</string>
+    <string name="please_enter_username">Please enter username</string>
+    <string name="please_enter_email">Please enter email_id</string>
+    <string name="please_enter_valid_email">Please enter valid email_id</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="password_must_be_six_charater">Password must be 6 character</string>
+    <string name="ok">OK</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="type_here">Type here</string>
+    <string name="new_user">New User</string>
+    <string name="login_failed_please_try_again_later">Invalid email_id or password</string>
+    <string name="registration_failed_please_try_again_later">Registration failed! Please try again later</string>
+    <string name="to_upload_profile_pic_you_have_to_allow_storage_permission">To upload profile pic and logo you have to allow storage permission</string>
+    <string name="please_wait">Please wait</string>
+    <string name="photo">Photo</string>
+    <string name="online">Online</string>
+    <string name="no_online_user">No online user</string>
+
+</resources>

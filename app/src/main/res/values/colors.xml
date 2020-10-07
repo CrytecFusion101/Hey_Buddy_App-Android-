@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/yellow</color>
+    <color name="colorPrimaryDark">@color/yellow</color>
+    <color name="colorAccent">@color/purple</color>
+
+    <color name="dark_gray">#dedede</color>
+    <color name="yellow">#ffcf00</color>
+    <color name="yellow_700">#FFD700</color>
+    <color name="purple">#A525FD</color>
+    <color name="black">#000000</color>
+    <color name="black_900">#212121</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorGray">#979797</color>
+
+</resources>
